@@ -12,10 +12,10 @@ Extension for thunderdome which allows error logging in the graph.
 """
 
 setup(
-    name='thunderdome_logging',
+    name='thunderdome-logging',
     version=version,
     description='Thunderdome graph error logging',
-    dependency_links=['https://github.com/StartTheShift/thunderdome_logging/archive/{0}.tar.gz#egg=thunderdome_logging-{0}'.format(version)],
+    dependency_links=['https://github.com/StartTheShift/thunderdome-logging/archive/{0}.tar.gz#egg=thunderdome-logging-{0}'.format(version)],
     long_description=long_desc,
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -32,7 +32,7 @@ setup(
     install_requires=['thunderdome==0.4.3'],
     author='StartTheShift',
     author_email='dev@shift.com',
-    url='https://github.com/StartTheShift/thunderdome_logging',
+    url='https://github.com/StartTheShift/thunderdome-logging',
     license='BSD',
     packages=find_packages(),
     include_package_data=True,

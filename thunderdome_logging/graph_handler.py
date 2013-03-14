@@ -65,7 +65,7 @@ class GraphHandler(logging.Handler):
 
         if vertex_args:
             # Create error vertex in graph
-            ev = ErrorVertex.create(error_message=record.msg)
+            ev = ErrorVertex.create(error_message=str(record.msg))
             for va in vertex_args:
                 # Associate the error vertex with all vertices in arguments
                 Errors.create(va, ev)
