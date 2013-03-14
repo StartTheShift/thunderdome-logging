@@ -1,7 +1,7 @@
 thunderdome-logging
 ===================
 
-Python graph database logging library backed by thunderdome
+Python graph database logging library backed by [thunderdome](https://github.com/StartTheShift/thunderdome)
 
 ## Installing
 
