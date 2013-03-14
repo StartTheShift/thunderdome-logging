@@ -3,6 +3,12 @@ thunderdome-logging
 
 Library for logging errors and associating them with vertices in a graph via thunderdome
 
+## Installing
+
+```
+pip install thunderdome_logging
+```
+
 ## Update thunderdome spec for logger
 
 Add the following to your thunderdome spec file to allow the logger to work:
