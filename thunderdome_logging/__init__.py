@@ -16,5 +16,10 @@
 # COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+import os
 
-__version__ = 0.1.0
+from thunderdome_logging.graph_handler import GraphHandler
+from thunderdome_logging.utils import get_errors
+
+__thunderdome_logging_version_path__ = os.path.realpath(__file__ + '/../VERSION')
+__version__ = open(__thunderdome_logging_version_path__, 'r').readline().strip()
