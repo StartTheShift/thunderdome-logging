@@ -6,7 +6,7 @@ Python graph database logging library backed by [thunderdome](https://github.com
 ## Installing
 
 ```
-pip install thunderdome_logging
+$ pip install thunderdome-logging
 ```
 
 ## Update thunderdome spec for logger
