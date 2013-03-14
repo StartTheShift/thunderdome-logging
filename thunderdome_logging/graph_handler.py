@@ -25,7 +25,7 @@ import thunderdome
 
 class ErrorVertex(thunderdome.Vertex):
     """Graph vertex for storing an error message sent to the logs."""
-    message    = thunderdome.String(required=True)
+    error_message    = thunderdome.String(required=True)
     created_at = thunderdome.DateTime(default=datetime.now, required=True)
         
     
@@ -65,7 +65,7 @@ class GraphHandler(logging.Handler):
 
         if vertex_args:
             # Create error vertex in graph
-            ev = ErrorVertex.create(message=record.msg)
+            ev = ErrorVertex.create(error_message=record.msg)
             for va in vertex_args:
                 # Associate the error vertex with all vertices in arguments
                 Errors.create(va, ev)
