@@ -42,7 +42,7 @@ Now that you have the graph handler attached to your logger you can place errors
 try:
   # Important stuff
 except Exception as ex:
-  logger.exception(ex, self.user, self.group) 
+  logger.exception("%s %s %s", ex, self.user, self.group) 
 ```
 
 This will create an error vertex in the graph with the given exception and its stack trace and then attach that error message vertex to the user and group objects passed in.
